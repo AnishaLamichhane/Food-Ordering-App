@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF5974DF280143FA00D28D86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5974DE280143FA00D28D86 /* HomeViewController.swift */; };
 		AF8CA30627FC6573004F1FEA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CA30527FC6573004F1FEA /* OnboardingViewController.swift */; };
 		AF8CA30927FC6AF3004F1FEA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CA30827FC6AF3004F1FEA /* UIViewExtension.swift */; };
 		AF8CA30B27FC6FD8004F1FEA /* OnboardingSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CA30A27FC6FD8004F1FEA /* OnboardingSlides.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF5974DE280143FA00D28D86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AF8CA30527FC6573004F1FEA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		AF8CA30827FC6AF3004F1FEA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		AF8CA30A27FC6FD8004F1FEA /* OnboardingSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlides.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF5974DD280143D200D28D86 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AF5974DE280143FA00D28D86 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		AF8CA30127FC64C1004F1FEA /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +64,7 @@
 		AF8CA30227FC64CA004F1FEA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AFF2275127FB46FC006E6E61 /* LaunchScreen.storyboard */,
-				AFF2274C27FB46FA006E6E61 /* Main.storyboard */,
+				AF5974DD280143D200D28D86 /* Home */,
 				AF8CA30427FC6542004F1FEA /* Onboarding */,
 			);
 			path = Views;
@@ -119,6 +128,8 @@
 				AF8CA30327FC64EB004F1FEA /* Custom Views */,
 				AF8CA30227FC64CA004F1FEA /* Views */,
 				AF8CA30127FC64C1004F1FEA /* Models */,
+				AFF2274C27FB46FA006E6E61 /* Main.storyboard */,
+				AFF2275127FB46FC006E6E61 /* LaunchScreen.storyboard */,
 				AFF2275427FB46FC006E6E61 /* Info.plist */,
 			);
 			path = "Food Ordering App";
@@ -200,6 +211,7 @@
 				AF8CA30B27FC6FD8004F1FEA /* OnboardingSlides.swift in Sources */,
 				AF8CA30927FC6AF3004F1FEA /* UIViewExtension.swift in Sources */,
 				AF8CA30627FC6573004F1FEA /* OnboardingViewController.swift in Sources */,
+				AF5974DF280143FA00D28D86 /* HomeViewController.swift in Sources */,
 				AF8CA30E27FC782F004F1FEA /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

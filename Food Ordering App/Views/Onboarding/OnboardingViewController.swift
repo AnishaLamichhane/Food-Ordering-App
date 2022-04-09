@@ -28,13 +28,12 @@ class OnboardingViewController: UIViewController {
         OnboardingSlides(title: "Delicious Dishes", description: "Experience variety of amazing dishes from different cultures  around the world.", image: UIImage(named: "slide2")!),
         OnboardingSlides(title: "World-Class Chefs", description: "Our dishes are prepared only the best.", image: UIImage(named: "slide1")!),
         OnboardingSlides(title: "Instant worldwide delivery", description: "Your order will be ordered instantly irrespective of your location around the world.", image: UIImage(named: "slide3")!)
-        
-        
     ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        pageControl.numberOfPages = slides.count
     }
     
     @IBAction func nextBtnClicked(_ sender: UIButton) {
@@ -42,7 +41,7 @@ class OnboardingViewController: UIViewController {
             let vc = storyboard?.instantiateViewController(withIdentifier: "HomeNC") as! UINavigationController
             vc.modalPresentationStyle = .fullScreen
             vc.modalTransitionStyle  = .flipHorizontal
-            present(vc,animated: true)
+            present(vc,animated: true,completion: nil)
         }else {
             currentPage += 1
             let indexPath =  IndexPath(item: currentPage, section: 0)
