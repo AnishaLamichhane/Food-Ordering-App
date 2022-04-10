@@ -27,7 +27,8 @@ class OnboardingViewController: UIViewController {
     var slides : [OnboardingSlides] = [
         OnboardingSlides(title: "Delicious Dishes", description: "Experience variety of amazing dishes from different cultures  around the world.", image: UIImage(named: "slide2")!),
         OnboardingSlides(title: "World-Class Chefs", description: "Our dishes are prepared only the best.", image: UIImage(named: "slide1")!),
-        OnboardingSlides(title: "Instant worldwide delivery", description: "Your order will be ordered instantly irrespective of your location around the world.", image: UIImage(named: "slide3")!)
+        OnboardingSlides(title: "Instant worldwide delivery", description: "Your order will be ordered instantly irrespective of your location around the world.", image: UIImage(named: "slide3")!),
+            
     ]
     
     
