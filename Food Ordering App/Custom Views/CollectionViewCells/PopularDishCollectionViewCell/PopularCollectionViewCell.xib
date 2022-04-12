@@ -54,22 +54,22 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="VBg-XS-RKA" secondAttribute="bottom" constant="8" id="9FJ-lV-NiU"/>
-                            <constraint firstAttribute="height" constant="300" id="H2T-zh-Tlj"/>
-                            <constraint firstAttribute="width" constant="180" id="IPp-Hh-TIQ"/>
-                            <constraint firstItem="VBg-XS-RKA" firstAttribute="top" secondItem="hrC-Jl-uME" secondAttribute="top" constant="8" id="eT7-BD-7Eh"/>
-                            <constraint firstItem="VBg-XS-RKA" firstAttribute="left" secondItem="hrC-Jl-uME" secondAttribute="left" constant="8" id="nKc-Zh-Cmi"/>
-                            <constraint firstAttribute="right" secondItem="VBg-XS-RKA" secondAttribute="right" constant="8" id="oNY-H9-MUV"/>
+                            <constraint firstItem="VBg-XS-RKA" firstAttribute="top" secondItem="hrC-Jl-uME" secondAttribute="top" constant="8" id="43W-hK-9EI"/>
+                            <constraint firstItem="VBg-XS-RKA" firstAttribute="leading" secondItem="hrC-Jl-uME" secondAttribute="leading" constant="8" id="AIG-6r-9Yh"/>
+                            <constraint firstAttribute="height" constant="300" id="G33-bp-erG"/>
+                            <constraint firstAttribute="trailing" secondItem="VBg-XS-RKA" secondAttribute="trailing" constant="8" id="TYX-HR-Nnj"/>
+                            <constraint firstAttribute="bottom" secondItem="VBg-XS-RKA" secondAttribute="bottom" constant="8" id="XBK-sQ-DD2"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="zpr-Md-K2X"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="E0b-96-qCt"/>
             <constraints>
-                <constraint firstItem="hrC-Jl-uME" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2cl-Px-VOq"/>
-                <constraint firstAttribute="trailing" secondItem="hrC-Jl-uME" secondAttribute="trailing" id="78Y-HV-FZj"/>
-                <constraint firstItem="hrC-Jl-uME" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aTS-f8-iMU"/>
-                <constraint firstAttribute="bottom" secondItem="hrC-Jl-uME" secondAttribute="bottom" id="ep6-9p-RBq"/>
+                <constraint firstAttribute="trailing" secondItem="hrC-Jl-uME" secondAttribute="trailing" id="6fb-be-8jc"/>
+                <constraint firstItem="hrC-Jl-uME" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ejA-hA-Ied"/>
+                <constraint firstAttribute="bottom" secondItem="hrC-Jl-uME" secondAttribute="bottom" id="vfS-W7-Tnh"/>
+                <constraint firstItem="hrC-Jl-uME" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zHk-02-ZqA"/>
             </constraints>
             <size key="customSize" width="180" height="300"/>
             <connections>
