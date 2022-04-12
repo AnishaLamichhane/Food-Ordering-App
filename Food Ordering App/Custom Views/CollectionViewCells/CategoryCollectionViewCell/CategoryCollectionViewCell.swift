@@ -8,7 +8,9 @@
 import UIKit
 import Kingfisher
 
-class FoodCategoryCollectionViewCell: UICollectionViewCell {
+class CategoryCollectionViewCell: UICollectionViewCell {
+    
+   static let identifier = "CategoryCollectionViewCell"
 
     @IBOutlet weak var categoryImageView: UIImageView!
     @IBOutlet weak var categoryLabel: UILabel!
@@ -19,7 +21,7 @@ class FoodCategoryCollectionViewCell: UICollectionViewCell {
     }
     
     func setUp(category: DishCategory){
-        categoryImageView.kf.setImage(with: category.categoryImage.asURL)
+        categoryImageView.kf.setImage(with: category.categoryImage?.asURL)
         categoryLabel.text = category.categoryLabel
     }
 

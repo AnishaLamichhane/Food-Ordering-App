@@ -8,5 +8,5 @@
 import Foundation
 
 struct DishCategory{
-    var id, categoryImage, categoryLabel: String
+    var id, categoryImage, categoryLabel: String?
 }
