@@ -24,14 +24,14 @@ class HomeViewController: UIViewController {
     
     var popularDishes:[Dish] = [
         .init(id: "id1", name: "Garri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822),
-        .init(id: "id1", name: "Garri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822),
-        .init(id: "id1", name: "Garri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822),
+        .init(id: "id1", name: "Harri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822),
+        .init(id: "id1", name: "Sarri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822),
         .init(id: "id1", name: "Garri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822),
     ]
     
     var chefSpecial: [Dish] = [
-        .init(id: "id1", name: "Plantian", description: "This is my special dish.", image: "https://picsum.photos/100/100", calories: 34.2822),
-        .init(id: "id1", name: "Garri", description: "This is tmy special dish.", image: "https://picsum.photos/100/200", calories: 34.2822),
+        .init(id: "id1", name: "Plantian", description: "This is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.", image: "https://picsum.photos/100/100", calories: 34.2822),
+        .init(id: "id1", name: "Nope", description: "This is tmy special dish.", image: "https://picsum.photos/100/200", calories: 34.2822),
     ]
     
     override func viewDidLoad() {
@@ -81,6 +81,17 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         default: return UICollectionViewCell()
         }
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView  {
+            
+        }else {
+            let controller = DishDetailViewController.instantiate()
+            controller.dish = collectionView  == popularCollectionView ? popularDishes[indexPath.row] : chefSpecial[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
+
+        }
     }
     
     
