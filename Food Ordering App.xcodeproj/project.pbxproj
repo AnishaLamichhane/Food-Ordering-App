@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF14A1CF280695D900D1DB04 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14A1CE280695D900D1DB04 /* DishDetailViewController.swift */; };
 		AF2F852B28030F69007675DC /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F852928030F69007675DC /* PopularCollectionViewCell.swift */; };
 		AF2F852C28030F69007675DC /* PopularCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2F852A28030F69007675DC /* PopularCollectionViewCell.xib */; };
 		AF2F852E280314D3007675DC /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F852D280314D3007675DC /* Dish.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		165893BA6795281E4C484127 /* Pods-Food Ordering App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Ordering App.release.xcconfig"; path = "Target Support Files/Pods-Food Ordering App/Pods-Food Ordering App.release.xcconfig"; sourceTree = "<group>"; };
+		AF14A1CE280695D900D1DB04 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 		AF2F852928030F69007675DC /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF2F852A28030F69007675DC /* PopularCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCollectionViewCell.xib; sourceTree = "<group>"; };
 		AF2F852D280314D3007675DC /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF14A1CD280695A300D1DB04 /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AF14A1CE280695D900D1DB04 /* DishDetailViewController.swift */,
+			);
+			path = DishDetail;
+			sourceTree = "<group>";
+		};
 		AF2F852828030EB4007675DC /* PopularDishCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		AF8CA30227FC64CA004F1FEA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AF14A1CD280695A300D1DB04 /* DishDetail */,
 				AF5974DD280143D200D28D86 /* Home */,
 				AF8CA30427FC6542004F1FEA /* Onboarding */,
 			);
@@ -353,6 +364,7 @@
 				AFF2274927FB46FA006E6E61 /* SceneDelegate.swift in Sources */,
 				AFA655B92801E65F00C081D3 /* StringExtension.swift in Sources */,
 				AF8CA30B27FC6FD8004F1FEA /* OnboardingSlides.swift in Sources */,
+				AF14A1CF280695D900D1DB04 /* DishDetailViewController.swift in Sources */,
 				AF8CA30927FC6AF3004F1FEA /* UIViewExtension.swift in Sources */,
 				AFB2DE082801DB95007B1AA6 /* CategoryCollectionViewCell.swift in Sources */,
 				AF99C9EB280570C7001C5A4A /* ChefSpecialCollectionViewCell.swift in Sources */,
