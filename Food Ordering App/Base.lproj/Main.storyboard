@@ -345,7 +345,7 @@
         <scene sceneID="Aoc-n9-COu">
             <objects>
                 <viewController storyboardIdentifier="DishDetailViewController" id="dvH-S4-8if" customClass="DishDetailViewController" customModule="Food_Ordering_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="51v-ac-zCu">
+                    <view key="view" contentMode="scaleToFill" id="51v-ac-zCu" customClass="ShadowView" customModule="Food_Ordering_App" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -440,7 +440,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3On-qY-3MD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2566.666666666667" y="112.5"/>
+            <point key="canvasLocation" x="2546" y="98"/>
+        </scene>
+        <!--List Dishes View Controller-->
+        <scene sceneID="1US-wc-aiE">
+            <objects>
+                <viewController storyboardIdentifier="ListDishesViewController" id="HAA-8j-wpg" customClass="ListDishesViewController" customModule="Food_Ordering_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HeV-eG-iGe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YlB-tF-1s6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HAA-8j-wpg" id="tV9-wy-qkV"/>
+                                    <outlet property="delegate" destination="HAA-8j-wpg" id="q7r-uH-oCJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Cs-pJ-mTX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YlB-tF-1s6" firstAttribute="leading" secondItem="HeV-eG-iGe" secondAttribute="leading" id="1LN-DN-5ei"/>
+                            <constraint firstAttribute="bottom" secondItem="YlB-tF-1s6" secondAttribute="bottom" id="8v5-uB-PR2"/>
+                            <constraint firstAttribute="trailing" secondItem="YlB-tF-1s6" secondAttribute="trailing" id="AyA-Mq-kuf"/>
+                            <constraint firstItem="YlB-tF-1s6" firstAttribute="top" secondItem="HeV-eG-iGe" secondAttribute="top" id="Swl-6L-aZQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="YlB-tF-1s6" id="bn3-AI-zAK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Eq-WM-z9I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3389.8550724637685" y="100.44642857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ghp-3f-DFd">

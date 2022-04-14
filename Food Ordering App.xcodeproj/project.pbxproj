@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0164152807E71700CF4EF7 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0164142807E71700CF4EF7 /* ListDishesViewController.swift */; };
+		AF0164172807EEF400CF4EF7 /* PopularCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF0164162807EEF400CF4EF7 /* PopularCollectionViewCell.xib */; };
 		AF14A1CF280695D900D1DB04 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14A1CE280695D900D1DB04 /* DishDetailViewController.swift */; };
 		AF14A1D12806990E00D1DB04 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14A1D02806990E00D1DB04 /* UIViewControllerExtension.swift */; };
+		AF14A1D62806E2A200D1DB04 /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14A1D42806E2A200D1DB04 /* DishListTableViewCell.swift */; };
+		AF14A1D72806E2A200D1DB04 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF14A1D52806E2A200D1DB04 /* DishListTableViewCell.xib */; };
 		AF2F852B28030F69007675DC /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F852928030F69007675DC /* PopularCollectionViewCell.swift */; };
-		AF2F852C28030F69007675DC /* PopularCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2F852A28030F69007675DC /* PopularCollectionViewCell.xib */; };
 		AF2F852E280314D3007675DC /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F852D280314D3007675DC /* Dish.swift */; };
 		AF5533AA28028182003321E7 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5533A928028182003321E7 /* ShadowView.swift */; };
 		AF5974DF280143FA00D28D86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5974DE280143FA00D28D86 /* HomeViewController.swift */; };
@@ -34,10 +37,13 @@
 
 /* Begin PBXFileReference section */
 		165893BA6795281E4C484127 /* Pods-Food Ordering App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Ordering App.release.xcconfig"; path = "Target Support Files/Pods-Food Ordering App/Pods-Food Ordering App.release.xcconfig"; sourceTree = "<group>"; };
+		AF0164142807E71700CF4EF7 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
+		AF0164162807EEF400CF4EF7 /* PopularCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopularCollectionViewCell.xib; sourceTree = "<group>"; };
 		AF14A1CE280695D900D1DB04 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 		AF14A1D02806990E00D1DB04 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		AF14A1D42806E2A200D1DB04 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
+		AF14A1D52806E2A200D1DB04 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		AF2F852928030F69007675DC /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
-		AF2F852A28030F69007675DC /* PopularCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCollectionViewCell.xib; sourceTree = "<group>"; };
 		AF2F852D280314D3007675DC /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		AF5533A928028182003321E7 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		AF5974DE280143FA00D28D86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF0164112807D79700CF4EF7 /* ListDishes */ = {
+			isa = PBXGroup;
+			children = (
+				AF0164142807E71700CF4EF7 /* ListDishesViewController.swift */,
+			);
+			path = ListDishes;
+			sourceTree = "<group>";
+		};
 		AF14A1CD280695A300D1DB04 /* DishDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,11 +96,28 @@
 			path = DishDetail;
 			sourceTree = "<group>";
 		};
+		AF14A1D22806E16800D1DB04 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF14A1D32806E27F00D1DB04 /* DishTableView */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		AF14A1D32806E27F00D1DB04 /* DishTableView */ = {
+			isa = PBXGroup;
+			children = (
+				AF14A1D42806E2A200D1DB04 /* DishListTableViewCell.swift */,
+				AF14A1D52806E2A200D1DB04 /* DishListTableViewCell.xib */,
+			);
+			path = DishTableView;
+			sourceTree = "<group>";
+		};
 		AF2F852828030EB4007675DC /* PopularDishCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				AF2F852928030F69007675DC /* PopularCollectionViewCell.swift */,
-				AF2F852A28030F69007675DC /* PopularCollectionViewCell.xib */,
+				AF0164162807EEF400CF4EF7 /* PopularCollectionViewCell.xib */,
 			);
 			path = PopularDishCollectionViewCell;
 			sourceTree = "<group>";
@@ -120,6 +151,7 @@
 		AF8CA30227FC64CA004F1FEA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AF0164112807D79700CF4EF7 /* ListDishes */,
 				AF14A1CD280695A300D1DB04 /* DishDetail */,
 				AF5974DD280143D200D28D86 /* Home */,
 				AF8CA30427FC6542004F1FEA /* Onboarding */,
@@ -130,6 +162,7 @@
 		AF8CA30327FC64EB004F1FEA /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				AF14A1D22806E16800D1DB04 /* TableViewCell */,
 				AF5533A828028165003321E7 /* ShadowView */,
 				AFB2DE042801DB2A007B1AA6 /* CollectionViewCells */,
 			);
@@ -304,11 +337,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFB2DE092801DB95007B1AA6 /* CategoryCollectionViewCell.xib in Resources */,
+				AF0164172807EEF400CF4EF7 /* PopularCollectionViewCell.xib in Resources */,
+				AF14A1D72806E2A200D1DB04 /* DishListTableViewCell.xib in Resources */,
 				AFF2275327FB46FC006E6E61 /* LaunchScreen.storyboard in Resources */,
 				AFF2275027FB46FC006E6E61 /* Assets.xcassets in Resources */,
 				AFF2274E27FB46FA006E6E61 /* Main.storyboard in Resources */,
 				AF99C9EC280570C7001C5A4A /* ChefSpecialCollectionViewCell.xib in Resources */,
-				AF2F852C28030F69007675DC /* PopularCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF14A1D62806E2A200D1DB04 /* DishListTableViewCell.swift in Sources */,
 				AF2F852B28030F69007675DC /* PopularCollectionViewCell.swift in Sources */,
 				AFF2274727FB46FA006E6E61 /* AppDelegate.swift in Sources */,
 				AF5533AA28028182003321E7 /* ShadowView.swift in Sources */,
@@ -374,6 +409,7 @@
 				AF99C9EB280570C7001C5A4A /* ChefSpecialCollectionViewCell.swift in Sources */,
 				AF8CA30627FC6573004F1FEA /* OnboardingViewController.swift in Sources */,
 				AF5974DF280143FA00D28D86 /* HomeViewController.swift in Sources */,
+				AF0164152807E71700CF4EF7 /* ListDishesViewController.swift in Sources */,
 				AFB2DE0B2801DEEA007B1AA6 /* DishCategory.swift in Sources */,
 				AF2F852E280314D3007675DC /* Dish.swift in Sources */,
 				AF8CA30E27FC782F004F1FEA /* OnboardingCollectionViewCell.swift in Sources */,

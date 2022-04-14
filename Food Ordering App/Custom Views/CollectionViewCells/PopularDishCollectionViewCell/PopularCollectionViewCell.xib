@@ -56,10 +56,9 @@
                         <constraints>
                             <constraint firstItem="VBg-XS-RKA" firstAttribute="top" secondItem="hrC-Jl-uME" secondAttribute="top" constant="8" id="43W-hK-9EI"/>
                             <constraint firstItem="VBg-XS-RKA" firstAttribute="leading" secondItem="hrC-Jl-uME" secondAttribute="leading" constant="8" id="AIG-6r-9Yh"/>
-                            <constraint firstAttribute="height" constant="300" id="G33-bp-erG"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="SDB-dF-SqZ"/>
                             <constraint firstAttribute="trailing" secondItem="VBg-XS-RKA" secondAttribute="trailing" constant="8" id="TYX-HR-Nnj"/>
                             <constraint firstAttribute="bottom" secondItem="VBg-XS-RKA" secondAttribute="bottom" constant="8" id="XBK-sQ-DD2"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="zpr-Md-K2X"/>
                         </constraints>
                     </view>
                 </subviews>
