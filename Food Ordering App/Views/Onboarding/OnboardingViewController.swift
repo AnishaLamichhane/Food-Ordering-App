@@ -34,11 +34,6 @@ class OnboardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let service = NetworkService()
-       let request = service.createRequest(route: .temp, method: .get, parameters: ["firstName": "Anisha", "lastname": "Lamichhane"])
-        print("the url is \(request?.url)")
-        
-        
         pageControl.numberOfPages = slides.count
     }
     
