@@ -8,7 +8,7 @@
 import Foundation
 
 struct NetworkService {
-    private func createRequest(route: Route, method: Method, parameters: [String: Any]? = nil) -> URLRequest? {
+     func createRequest(route: Route, method: Method, parameters: [String: Any]? = nil) -> URLRequest? {
         let urlString = Route.baseUrl + route.description
         guard let url = urlString.asURL else {
             print("this is not a valid url")
