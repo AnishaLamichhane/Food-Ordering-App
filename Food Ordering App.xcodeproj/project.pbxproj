@@ -17,8 +17,11 @@
 		AF14A1D72806E2A200D1DB04 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF14A1D52806E2A200D1DB04 /* DishListTableViewCell.xib */; };
 		AF2F852B28030F69007675DC /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F852928030F69007675DC /* PopularCollectionViewCell.swift */; };
 		AF2F852E280314D3007675DC /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F852D280314D3007675DC /* Dish.swift */; };
+		AF4BA661280D96EC00FC8CEE /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4BA660280D96EC00FC8CEE /* Method.swift */; };
 		AF5533AA28028182003321E7 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5533A928028182003321E7 /* ShadowView.swift */; };
 		AF5974DF280143FA00D28D86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5974DE280143FA00D28D86 /* HomeViewController.swift */; };
+		AF69E4BE280C43B7001E5904 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69E4BD280C43B7001E5904 /* NetworkService.swift */; };
+		AF69E4C0280C47D0001E5904 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69E4BF280C47D0001E5904 /* Route.swift */; };
 		AF8CA30627FC6573004F1FEA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CA30527FC6573004F1FEA /* OnboardingViewController.swift */; };
 		AF8CA30927FC6AF3004F1FEA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CA30827FC6AF3004F1FEA /* UIViewExtension.swift */; };
 		AF8CA30B27FC6FD8004F1FEA /* OnboardingSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CA30A27FC6FD8004F1FEA /* OnboardingSlides.swift */; };
@@ -49,8 +52,11 @@
 		AF14A1D52806E2A200D1DB04 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		AF2F852928030F69007675DC /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF2F852D280314D3007675DC /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		AF4BA660280D96EC00FC8CEE /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		AF5533A928028182003321E7 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		AF5974DE280143FA00D28D86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AF69E4BD280C43B7001E5904 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AF69E4BF280C47D0001E5904 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		AF8CA30527FC6573004F1FEA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		AF8CA30827FC6AF3004F1FEA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		AF8CA30A27FC6FD8004F1FEA /* OnboardingSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlides.swift; sourceTree = "<group>"; };
@@ -148,6 +154,16 @@
 				AF5974DE280143FA00D28D86 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		AF69E4BC280C439D001E5904 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AF69E4BD280C43B7001E5904 /* NetworkService.swift */,
+				AF69E4BF280C47D0001E5904 /* Route.swift */,
+				AF4BA660280D96EC00FC8CEE /* Method.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		AF8CA30127FC64C1004F1FEA /* Models */ = {
@@ -261,6 +277,7 @@
 		AFF2274527FB46FA006E6E61 /* Food Ordering App */ = {
 			isa = PBXGroup;
 			children = (
+				AF69E4BC280C439D001E5904 /* Networking */,
 				AF8CA30C27FC6FDF004F1FEA /* Resources */,
 				AF8CA30727FC6AA4004F1FEA /* Extensions */,
 				AF8CA30327FC64EB004F1FEA /* Custom Views */,
@@ -417,11 +434,14 @@
 				AF14A1D12806990E00D1DB04 /* UIViewControllerExtension.swift in Sources */,
 				AFA655B92801E65F00C081D3 /* StringExtension.swift in Sources */,
 				AF8CA30B27FC6FD8004F1FEA /* OnboardingSlides.swift in Sources */,
+				AF4BA661280D96EC00FC8CEE /* Method.swift in Sources */,
 				AF14A1CF280695D900D1DB04 /* DishDetailViewController.swift in Sources */,
 				AF8CA30927FC6AF3004F1FEA /* UIViewExtension.swift in Sources */,
 				AFB2DE082801DB95007B1AA6 /* CategoryCollectionViewCell.swift in Sources */,
 				AF99C9EB280570C7001C5A4A /* ChefSpecialCollectionViewCell.swift in Sources */,
 				AF8CA30627FC6573004F1FEA /* OnboardingViewController.swift in Sources */,
+				AF69E4C0280C47D0001E5904 /* Route.swift in Sources */,
+				AF69E4BE280C43B7001E5904 /* NetworkService.swift in Sources */,
 				AF01641A2807F48100CF4EF7 /* OrderListViewController.swift in Sources */,
 				AF01641C280843D200CF4EF7 /* Orders.swift in Sources */,
 				AF5974DF280143FA00D28D86 /* HomeViewController.swift in Sources */,
