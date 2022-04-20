@@ -36,7 +36,16 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NetworkService.shared.myFirstRequest()
+     
+        NetworkService.shared.myFirstRequest { result in
+            switch result {
+            case .success(let data):
+                print("The data is \(data)")
+                
+            case .failure(let error):
+                print("The error is  \(error)")
+            }
+        }
         
         categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
         popularCollectionView.register(UINib(nibName: PopularCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: PopularCollectionViewCell.identifier)

@@ -38,6 +38,7 @@
 		AFF2274E27FB46FA006E6E61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF2274C27FB46FA006E6E61 /* Main.storyboard */; };
 		AFF2275027FB46FC006E6E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF2274F27FB46FC006E6E61 /* Assets.xcassets */; };
 		AFF2275327FB46FC006E6E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF2275127FB46FC006E6E61 /* LaunchScreen.storyboard */; };
+		AFF81B36281009EF0025F049 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF81B35281009EF0025F049 /* ApiResponse.swift */; };
 		C184251A649C7E8F5339BA14 /* Pods_Food_Ordering_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAEC5458B059405586A2EF3 /* Pods_Food_Ordering_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		AFF2274F27FB46FC006E6E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFF2275227FB46FC006E6E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFF2275427FB46FC006E6E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF81B35281009EF0025F049 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		BBAEC5458B059405586A2EF3 /* Pods_Food_Ordering_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Ordering_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E0A4999859B2373CF47F6F /* Pods-Food Ordering App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Ordering App.debug.xcconfig"; path = "Target Support Files/Pods-Food Ordering App/Pods-Food Ordering App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +167,7 @@
 				AF69E4BF280C47D0001E5904 /* Route.swift */,
 				AF4BA660280D96EC00FC8CEE /* Method.swift */,
 				AF4BA662280DD5F400FC8CEE /* AppError.swift */,
+				AFF81B35281009EF0025F049 /* ApiResponse.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				AF8CA30927FC6AF3004F1FEA /* UIViewExtension.swift in Sources */,
 				AFB2DE082801DB95007B1AA6 /* CategoryCollectionViewCell.swift in Sources */,
 				AF99C9EB280570C7001C5A4A /* ChefSpecialCollectionViewCell.swift in Sources */,
+				AFF81B36281009EF0025F049 /* ApiResponse.swift in Sources */,
 				AF8CA30627FC6573004F1FEA /* OnboardingViewController.swift in Sources */,
 				AF69E4C0280C47D0001E5904 /* Route.swift in Sources */,
 				AF69E4BE280C43B7001E5904 /* NetworkService.swift in Sources */,
