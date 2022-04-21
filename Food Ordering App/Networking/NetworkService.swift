@@ -11,8 +11,8 @@ struct NetworkService {
     static let shared = NetworkService()
     private init() {}
     
-    func myFirstRequest(completion: @escaping(Result<String, Error>) -> Void){
-        request(route: .temp, method: .get, completion: completion)
+    func fetchAllCategories(completion: @escaping(Result<AllDishes, Error>) -> Void) {
+        request(route: .fetchAllCategories, method: .get, completion: completion)
     }
     
     private func request<T: Codable>(route: Route,
@@ -31,7 +31,7 @@ struct NetworkService {
             if let data = data {
                 result = .success(data)
                 let responseString = String(data: data, encoding: .utf8) ?? "couldnot convert data into string."
-                print("The response is : \(responseString)")
+//                print("The response is : \(responseString)")
                 
             } else if let error = error {
                 result = .failure(error)

@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct DishCategory{
+struct DishCategory: Codable{
     var id, categoryImage, categoryLabel: String?
 }
