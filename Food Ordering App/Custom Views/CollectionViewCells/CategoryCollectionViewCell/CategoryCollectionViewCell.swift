@@ -12,8 +12,9 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     
    static let identifier = "CategoryCollectionViewCell"
 
-    @IBOutlet weak var categoryImageView: UIImageView!
-    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var title: UILabel!
+   
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,8 +22,8 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     }
     
     func setUp(category: DishCategory){
-        categoryImageView.kf.setImage(with: category.categoryImage?.asURL)
-        categoryLabel.text = category.categoryLabel
+        image.kf.setImage(with: category.image?.asURL)
+        title.text = category.title
     }
 
 }

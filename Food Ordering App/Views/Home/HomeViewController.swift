@@ -14,26 +14,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var popularCollectionView: UICollectionView!
     @IBOutlet weak var chefSpecialCollectionView: UICollectionView!
     
-    var categories:[DishCategory] = [
-        .init(id: "id1", categoryImage: "https://picsum.photos/100/200", categoryLabel: "Flower Image"),
-        .init(id: "id2", categoryImage: "https://picsum.photos/100/200", categoryLabel: "some Image"),
-        .init(id: "id3", categoryImage: "https://picsum.photos/100/200", categoryLabel: "leaves Image"),
-        .init(id: "id4", categoryImage: "https://picsum.photos/100/200", categoryLabel: "thorn Image"),
-        .init(id: "id5", categoryImage: "https://picsum.photos/100/200", categoryLabel: "nice Image")
-        
-    ]
-    
-    var popularDishes:[Dish] = [
-        .init(id: "id1", name: "Garri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822),
-        .init(id: "id1", name: "Harri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822),
-        .init(id: "id1", name: "Sarri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822),
-        .init(id: "id1", name: "Garri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822),
-    ]
-    
-    var chefSpecial: [Dish] = [
-        .init(id: "id1", name: "Plantian", description: "This is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.his is my special dish.", image: "https://picsum.photos/100/100", calories: 34.2822),
-        .init(id: "id1", name: "Nope", description: "This is tmy special dish.", image: "https://picsum.photos/100/200", calories: 34.2822),
-    ]
+    var categories:[DishCategory] = []
+    var popularDishes:[Dish] = []
+    var chefSpecial: [Dish] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,11 +27,18 @@ class HomeViewController: UIViewController {
         
         ProgressHUD.show()
         
-        NetworkService.shared.fetchAllCategories { (result) in
+        NetworkService.shared.fetchAllCategories { [self] (result) in
             switch result {
                 
             case .success(let allDishes):
                 ProgressHUD.dismiss()
+                categories = allDishes.categories ?? []
+                popularDishes = allDishes.populars ?? []
+                chefSpecial = allDishes.specials ?? []
+                
+                categoryCollectionView.reloadData()
+                popularCollectionView.reloadData()
+                chefSpecialCollectionView.reloadData()
                 
             case .failure(let error):
                 ProgressHUD.showError(error.localizedDescription)

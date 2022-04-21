@@ -62,8 +62,8 @@
             </constraints>
             <size key="customSize" width="150" height="56"/>
             <connections>
-                <outlet property="categoryImageView" destination="aA4-5t-2fz" id="Dvz-jw-KZg"/>
-                <outlet property="categoryLabel" destination="SzR-Vd-8O2" id="ln5-DB-iBn"/>
+                <outlet property="image" destination="aA4-5t-2fz" id="CJE-Yn-rDK"/>
+                <outlet property="title" destination="SzR-Vd-8O2" id="fbk-jE-oyG"/>
             </connections>
             <point key="canvasLocation" x="210.1449275362319" y="115.17857142857142"/>
         </collectionViewCell>
