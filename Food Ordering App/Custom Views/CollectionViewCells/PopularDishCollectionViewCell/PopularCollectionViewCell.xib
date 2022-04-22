@@ -20,30 +20,30 @@
                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrC-Jl-uME" customClass="ShadowView" customModule="Food_Ordering_App" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VBg-XS-RKA">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VBg-XS-RKA">
                                 <rect key="frame" x="8" y="8" width="164" height="284"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fH-64-PhS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fH-64-PhS">
                                         <rect key="frame" x="0.0" y="0.0" width="164" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IdG-bc-C1q">
-                                        <rect key="frame" x="0.0" y="28.5" width="164" height="209"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="150" translatesAutoresizingMaskIntoConstraints="NO" id="IdG-bc-C1q">
+                                        <rect key="frame" x="0.0" y="30.5" width="164" height="203"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZQ-Jh-E6o">
-                                        <rect key="frame" x="0.0" y="245.5" width="164" height="13.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZQ-Jh-E6o">
+                                        <rect key="frame" x="0.0" y="243.5" width="164" height="13.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZV-oy-Evk">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZV-oy-Evk">
                                         <rect key="frame" x="0.0" y="267" width="164" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
@@ -54,9 +54,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="width" constant="180" id="1Jf-a2-jZH"/>
                             <constraint firstItem="VBg-XS-RKA" firstAttribute="top" secondItem="hrC-Jl-uME" secondAttribute="top" constant="8" id="43W-hK-9EI"/>
+                            <constraint firstAttribute="height" constant="300" id="5fH-q8-YSD"/>
                             <constraint firstItem="VBg-XS-RKA" firstAttribute="leading" secondItem="hrC-Jl-uME" secondAttribute="leading" constant="8" id="AIG-6r-9Yh"/>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="SDB-dF-SqZ"/>
                             <constraint firstAttribute="trailing" secondItem="VBg-XS-RKA" secondAttribute="trailing" constant="8" id="TYX-HR-Nnj"/>
                             <constraint firstAttribute="bottom" secondItem="VBg-XS-RKA" secondAttribute="bottom" constant="8" id="XBK-sQ-DD2"/>
                         </constraints>
