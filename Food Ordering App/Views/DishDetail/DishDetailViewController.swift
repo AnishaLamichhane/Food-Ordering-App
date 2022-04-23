@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class DishDetailViewController: UIViewController {
     @IBOutlet weak var dishImageView: UIImageView!
@@ -19,7 +20,7 @@ class DishDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         populateView()
-
+        
     }
     
     private func populateView() {
@@ -30,6 +31,21 @@ class DishDetailViewController: UIViewController {
     }
     
     @IBAction func placeOrderBtnClicked(_ sender: UIButton) {
+        guard let name = nameField.text?.trimmingCharacters(in: .whitespaces), !name.isEmpty else {
+            ProgressHUD.showError("Please enter your name!")
+            return
+        }
+        ProgressHUD.show("Placing Order ...")
+        NetworkService.shared.placeOrder(dishId: dish.id ?? "", name: name) { (result) in
+            switch result {
+                
+            case .success(let order):
+                ProgressHUD.showSuccess("Your order has been placed.👩‍🍳")
+                
+            case .failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }
     }
+    
 }
-                                                                                                 

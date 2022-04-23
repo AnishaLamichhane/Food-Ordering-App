@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Orders{
+struct Orders: Codable{
     var id: String?
     var name : String?
     var dish: Dish?
