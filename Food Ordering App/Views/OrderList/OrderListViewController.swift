@@ -6,23 +6,36 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class OrderListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var orders: [Orders] = [
-        .init(id: "id1", name: "Anisha", dish: .init(id: "id1", name: "Garri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822)),
-        .init(id: "id1", name: "Anisha", dish: .init(id: "id1", name: "Garri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822)),
-        .init(id: "id1", name: "Anisha", dish: .init(id: "id1", name: "Garri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822)),
-        .init(id: "id1", name: "Anisha", dish: .init(id: "id1", name: "Garri", description: "This is the best I have.", image: "https://picsum.photos/100/200", calories: 34.2822)),
-        
-    ]
+    var orders: [Orders] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Orders"
         registerViews()
+        
+        ProgressHUD.show()
+      
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        NetworkService.shared.fetchOrders {  (result) in
+            switch result {
+            case .success(let orders):
+                ProgressHUD.dismiss()
+                self.orders = orders
+                self.tableView.reloadData()
+                
+                
+            case .failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }
     }
     
     private func registerViews(){
