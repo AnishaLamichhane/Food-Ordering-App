@@ -43,7 +43,7 @@ struct NetworkService {
             var result: Result<Data, Error>?
             if let data = data {
                 result = .success(data)
-                let responseString = String(data: data, encoding: .utf8) ?? "couldnot convert data into string."
+                _ = String(data: data, encoding: .utf8) ?? "couldnot convert data into string."
 //                print("The response is : \(responseString)")
                 
             } else if let error = error {

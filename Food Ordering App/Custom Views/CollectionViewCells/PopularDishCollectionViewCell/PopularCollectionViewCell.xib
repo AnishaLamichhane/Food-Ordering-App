@@ -54,9 +54,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="180" id="1Jf-a2-jZH"/>
+                            <constraint firstAttribute="width" priority="999" constant="180" id="1Jf-a2-jZH"/>
                             <constraint firstItem="VBg-XS-RKA" firstAttribute="top" secondItem="hrC-Jl-uME" secondAttribute="top" constant="8" id="43W-hK-9EI"/>
-                            <constraint firstAttribute="height" constant="300" id="5fH-q8-YSD"/>
+                            <constraint firstAttribute="height" priority="999" constant="300" id="5fH-q8-YSD"/>
                             <constraint firstItem="VBg-XS-RKA" firstAttribute="leading" secondItem="hrC-Jl-uME" secondAttribute="leading" constant="8" id="AIG-6r-9Yh"/>
                             <constraint firstAttribute="trailing" secondItem="VBg-XS-RKA" secondAttribute="trailing" constant="8" id="TYX-HR-Nnj"/>
                             <constraint firstAttribute="bottom" secondItem="VBg-XS-RKA" secondAttribute="bottom" constant="8" id="XBK-sQ-DD2"/>
@@ -78,7 +78,7 @@
                 <outlet property="dishImageView" destination="IdG-bc-C1q" id="0K6-rs-dXw"/>
                 <outlet property="titleLbl" destination="0fH-64-PhS" id="mtc-06-DYY"/>
             </connections>
-            <point key="canvasLocation" x="231.8840579710145" y="220.3125"/>
+            <point key="canvasLocation" x="182.60869565217394" y="87.723214285714278"/>
         </collectionViewCell>
     </objects>
     <resources>
