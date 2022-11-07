@@ -9,7 +9,7 @@ import UIKit
 import ProgressHUD
 
 class HomeViewController: UIViewController {
-    
+	static let controllerIdentifier = String(describing: HomeViewController.self)
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var popularCollectionView: UICollectionView!
     @IBOutlet weak var chefSpecialCollectionView: UICollectionView!

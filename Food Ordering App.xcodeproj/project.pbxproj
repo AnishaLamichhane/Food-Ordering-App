@@ -17,6 +17,9 @@
 		AF14A1D72806E2A200D1DB04 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF14A1D52806E2A200D1DB04 /* DishListTableViewCell.xib */; };
 		AF2F852B28030F69007675DC /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F852928030F69007675DC /* PopularCollectionViewCell.swift */; };
 		AF2F852E280314D3007675DC /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F852D280314D3007675DC /* Dish.swift */; };
+		AF440BCC2918F89B000E9249 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF440BCB2918F89B000E9249 /* GoogleService-Info.plist */; };
+		AF440BCF2918FA3F000E9249 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF440BCE2918FA3F000E9249 /* LoginViewController.swift */; };
+		AF440BD129190170000E9249 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF440BD029190170000E9249 /* RegistrationViewController.swift */; };
 		AF4BA661280D96EC00FC8CEE /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4BA660280D96EC00FC8CEE /* Method.swift */; };
 		AF4BA663280DD5F400FC8CEE /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4BA662280DD5F400FC8CEE /* AppError.swift */; };
 		AF5533AA28028182003321E7 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5533A928028182003321E7 /* ShadowView.swift */; };
@@ -55,6 +58,9 @@
 		AF14A1D52806E2A200D1DB04 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		AF2F852928030F69007675DC /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF2F852D280314D3007675DC /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		AF440BCB2918F89B000E9249 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF440BCE2918FA3F000E9249 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AF440BD029190170000E9249 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		AF4BA660280D96EC00FC8CEE /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		AF4BA662280DD5F400FC8CEE /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		AF5533A928028182003321E7 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
@@ -146,6 +152,15 @@
 			path = PopularDishCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		AF440BCD2918FA2B000E9249 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AF440BCE2918FA3F000E9249 /* LoginViewController.swift */,
+				AF440BD029190170000E9249 /* RegistrationViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		AF5533A828028165003321E7 /* ShadowView */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +204,7 @@
 		AF8CA30227FC64CA004F1FEA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AF440BCD2918FA2B000E9249 /* Authentication */,
 				AF0164182807F46A00CF4EF7 /* OrderList */,
 				AF0164112807D79700CF4EF7 /* ListDishes */,
 				AF14A1CD280695A300D1DB04 /* DishDetail */,
@@ -294,6 +310,7 @@
 				AF8CA30127FC64C1004F1FEA /* Models */,
 				AFF2274C27FB46FA006E6E61 /* Main.storyboard */,
 				AFF2275127FB46FC006E6E61 /* LaunchScreen.storyboard */,
+				AF440BCB2918F89B000E9249 /* GoogleService-Info.plist */,
 				AFF2275427FB46FC006E6E61 /* Info.plist */,
 			);
 			path = "Food Ordering App";
@@ -327,7 +344,7 @@
 				AFF2273F27FB46FA006E6E61 /* Sources */,
 				AFF2274027FB46FA006E6E61 /* Frameworks */,
 				AFF2274127FB46FA006E6E61 /* Resources */,
-				F825B150BBFB4D0062539DD9 /* [CP] Embed Pods Frameworks */,
+				37EDE2396B9A4B5AD8F3E7B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -377,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFB2DE092801DB95007B1AA6 /* CategoryCollectionViewCell.xib in Resources */,
+				AF440BCC2918F89B000E9249 /* GoogleService-Info.plist in Resources */,
 				AF0164172807EEF400CF4EF7 /* PopularCollectionViewCell.xib in Resources */,
 				AF14A1D72806E2A200D1DB04 /* DishListTableViewCell.xib in Resources */,
 				AFF2275327FB46FC006E6E61 /* LaunchScreen.storyboard in Resources */,
@@ -389,6 +407,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		37EDE2396B9A4B5AD8F3E7B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Food Ordering App/Pods-Food Ordering App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Food Ordering App/Pods-Food Ordering App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Food Ordering App/Pods-Food Ordering App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		529A52F5B075D20E38FCAB8A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,23 +446,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F825B150BBFB4D0062539DD9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Food Ordering App/Pods-Food Ordering App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Food Ordering App/Pods-Food Ordering App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Food Ordering App/Pods-Food Ordering App-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -447,11 +465,13 @@
 				AF4BA661280D96EC00FC8CEE /* Method.swift in Sources */,
 				AF14A1CF280695D900D1DB04 /* DishDetailViewController.swift in Sources */,
 				AF8CA30927FC6AF3004F1FEA /* UIViewExtension.swift in Sources */,
+				AF440BCF2918FA3F000E9249 /* LoginViewController.swift in Sources */,
 				AFB2DE082801DB95007B1AA6 /* CategoryCollectionViewCell.swift in Sources */,
 				AF99C9EB280570C7001C5A4A /* ChefSpecialCollectionViewCell.swift in Sources */,
 				AFF81B36281009EF0025F049 /* ApiResponse.swift in Sources */,
 				AF8CA30627FC6573004F1FEA /* OnboardingViewController.swift in Sources */,
 				AF69E4C0280C47D0001E5904 /* Route.swift in Sources */,
+				AF440BD129190170000E9249 /* RegistrationViewController.swift in Sources */,
 				AF69E4BE280C43B7001E5904 /* NetworkService.swift in Sources */,
 				AF01641A2807F48100CF4EF7 /* OrderListViewController.swift in Sources */,
 				AF01641C280843D200CF4EF7 /* Orders.swift in Sources */,
@@ -610,7 +630,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WBND8H9MX8;
+				DEVELOPMENT_TEAM = FF33WRGHKG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Food Ordering App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -639,7 +659,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WBND8H9MX8;
+				DEVELOPMENT_TEAM = FF33WRGHKG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Food Ordering App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -39,7 +39,7 @@ class OnboardingViewController: UIViewController {
     
     @IBAction func nextBtnClicked(_ sender: UIButton) {
         if currentPage == slides.count - 1{
-            let vc = storyboard?.instantiateViewController(withIdentifier: "HomeNC") as! UINavigationController
+			let vc = storyboard?.instantiateViewController(withIdentifier: LoginViewController.controllerIdentifier) as! LoginViewController
             vc.modalPresentationStyle = .fullScreen
             vc.modalTransitionStyle  = .flipHorizontal
             present(vc,animated: true,completion: nil)
